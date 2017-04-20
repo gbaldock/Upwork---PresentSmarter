@@ -1,0 +1,186 @@
+body {
+  background: #d2d7d3; 
+}
+
+/* Reset bullet decoration */
+li {
+  list-style-type:none
+}
+
+/* Start Top Section */
+  .hero {
+    background: url("/PresentSmarter/images/circuitBoard.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh; 
+  }
+  
+  .hero:before {
+    content: '';
+    position: absolute;
+    top: 235px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .8; 
+  }
+  
+  .hero .intro {
+    padding: 3rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+  }
+  
+  .hero h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    letter-spacing: -0.025em;
+    font-weight: 300;
+    text-align: center; 
+  }
+  
+  .hero p {
+    color: #fff;
+    line-height: 1.75em;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem; 
+  }
+  
+  .hero .tech-img {
+    background: url("/PresentSmarter/images/smartPhone.jpg") no-repeat center center;
+    background-size: cover;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; 
+  }
+  
+  @media only screen and (min-width: 40.063em) {
+    .hero .tech-img {
+      height: 18rem;
+      width: 18rem; }
+    .hero h1 {
+      padding-top: 4.5rem;
+      text-align: right;
+      font-size: 2.5rem; }
+    .hero p {
+      text-align: right; } 
+  }
+
+/* End Top Section */
+
+/* Start Pricing Table */
+
+  .pricing-table, .recommended {
+    position: relative;
+    box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+    border-radius: 3px;
+    transition: 0.4s ease-in-out;
+    z-index: 13; }
+
+  .pricing-table .title, .recommended .title {
+    background: #f2f1ef;
+    color: #59abe3;
+    font-size: 2rem;
+    text-align: center;
+    }
+
+  .pricing-table .description, .recommended .description {
+    background: #f2f1ef;
+    color: #F9690E;
+    text-align: center;
+    font-size: 1rem;
+    padding-left: 10px;
+    }
+
+  .pricing-table .price, .recommended .price {
+    background: #f2f1ef;
+    color: #F9690E;
+    font-size: 2rem;
+    text-align: center;
+    }
+
+  .pricing-table .price hr, .recommended .price hr {
+    color: #6a6456;
+    width: 70%;
+    margin: 0 auto; 
+    }
+
+  .pricing-table .bullet-item, .recommended .bullet-item {
+    background: #f2f1ef;
+    border: none;
+    font-size: 2rem;
+    }
+
+  .pricing-table .bullet-item span, .recommended .bullet-item span {
+    font-size: 1.3rem;
+    }
+
+  .pricing-table .cta-button, .recommended .cta-button {
+      background: #f2f1ef; 
+    }
+
+  .pricing-table .cta-button .button, .recommended .cta-button .button {
+      background-color: #f9690e;
+      border-radius: 3px;
+      border-bottom: 3px solid #b44804;
+    }
+
+  .pricing-table .cta-button .button:hover, .recommended .cta-button .button:hover {
+      background-color: #b44804; 
+    }
+
+  .pricing-table span, .recommended span {
+    color: #b1ab9f;
+    padding-left: 10px;
+    }
+
+  .recommended {
+      z-index: 15;
+      box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+      border: 3px solid #59abe3;
+      transform: scale(1.25); 
+   }
+
+  .recommended .best {
+      background: #f2f1ef;
+      text-align: center; 
+   }
+
+  .recommended .best span {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      margin: 0 auto;
+      top: -1px;
+      background-color: #59abe3;
+      color: #f2f1ef;
+      padding: 0.3rem 1.5rem;
+      height: 2rem;
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px; 
+   }
+  
+  .recommended .title {
+      padding: 2rem; 
+   }
+  
+  .recommended .cta-button .button {
+      background: #59abe3;
+      border-bottom: 3px solid #207dbd; 
+   }
+  
+  .recommended .cta-button .button:hover {
+      background-color: #207dbd; 
+   }
+  
+  @media only screen and (max-width: 40.063em) {
+    .recommended {
+      transform: scale(1); } 
+   }
+
+/* End Pricing Table */
